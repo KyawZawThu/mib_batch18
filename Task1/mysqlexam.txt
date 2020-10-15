@@ -1,0 +1,20 @@
+SELECT name'staff_name' FROM `staffs`
+SELECT DISTINCT department_id FROM `staffs`
+SELECT * FROM `staffs` ORDER BY name
+SELECT * FROM `staffs` order by name, department_id DESC
+SELECT * FROM `staffs` where name in ('Kyaw Thwe', 'Thae Su Wai')
+SELECT * FROM `staffs` INNER join departments ON staffs.department_id=departments.id where departments.name="Admin"
+SELECT * FROM `staffs` where name like '%a%'
+SELECT * FROM `staffs` where name like '%e'
+SELECT * FROM `staffs` where salary between 100000 and 500000
+SELECT * FROM `staffs` where joindate like '2014-02%'
+SELECT count(*) FROM `staffs` INNER JOIN departments on staffs.department_id=departments.id where departments.name = 'Admin'
+SELECT * FROM `staffs` INNER JOIN departments on staffs.department_id=departments.id where departments.name='Manager'
+SELECT * FROM `staffs` LIMIT 5
+SELECT * FROM `staffs` order by salary desc limit 3
+SELECT depatment, sum(salary) FROM `staffs` group by department_id
+SELECT * FROM `staffs` INNER JOIN bonus on staffs.id=bonus.staff_id where bonus.bonusdate like '2016-02%'
+SELECT * FROM `staffs` INNER JOIN bonus on staffs.id=bonus.staff_id where bonus.bonusdate like '2016%' and staffs.name='Aye Aye'
+
+
+

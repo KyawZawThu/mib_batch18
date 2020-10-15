@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 2</title>
+	<style type="text/css">
+		img{
+			object-fit: cover;
+		}
+		#img1{
+			width: 300px;
+			height: 90px;
+			object-fit: cover;
+		}
+		#p1{
+			float: right;
+			margin: 25px 100px 0px 0px;
+			color: blue;
+			font-size: 30px;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+		.clear{
+			clear: both;
+		}
+		#img2{
+			border-radius: 50%;
+			width: 200px;
+			height: 200px;
+			margin: 40px 0px 0px 250px;
+			object-fit: cover;
+		}
+		h4{
+			position: absolute;
+			top: 15%;
+			left: 45%;
+			font-size: 40px;
+		}
+		#p2{
+			position: absolute;
+			top: 30%;
+			left: 45%;
+			font-size: 20px;
+		}
+		#btn1{
+			position: absolute;
+			top: 27%;
+			left: 65%;
+			background-color: white;
+  			color: black;
+ 			border: 1px solid black;
+ 			width: 150px;
+		}
+		.follower{
+			display: flex;
+			margin: -120px 570px 0px;
+			font-weight: bold;
+		}
+		.follower p:first-child{
+			margin-right: 120px;
+		}
+		.follower p:nth-child(2){
+			margin-right: 120px;
+		}
+		.column {
+  			float: left;
+  			width: 33.33%;
+  			margin: 200px 0px 0px 0px;
+		}
+
+/* Clear floats after the columns */
+		.row:after {
+ 			 content: "";
+  			display: table;
+  			clear: both;
+		}
+		.out{
+			margin: 0px 0px 0px 150px;
+		}
+
+		.row .column img{
+			width: 250px;
+			height: 210px;
+		}
+		.row .column img:nth-child(2){
+			margin: 50px 0px;
+		}
+	</style>
+</head>
+<body>
+<img src="photo/insta1.png" id="img1">
+<p id="p1">Log out</p>
+<div class="clear"></div>
+<img src="photo/insta2.jpg" id="img2">
+<h4>tayhatmarker</h4>
+<p id="p2">taylor hatmarker taylor vs internet &#9749; &#9889;&#9977;</p>
+<button id="btn1">EDIT PROFIlE</button>
+<div class="follower">
+<p>953 posts </p> <p>1078 followers</p> <p>145 following</p>
+</div>
+<div class="out">
+	
+
+<div class="row">
+	<div class="column">
+		<img src="photo/insta3.jpg">
+		<img src="photo/insta4.jpg">
+		<img src="photo/insta5.jpg">
+	</div>
+  <div class="column">		<img src="photo/insta3.jpg">
+		<img src="photo/insta4.jpg">
+		<img src="photo/insta5.jpg"></div>
+  <div class="column">		<img src="photo/insta3.jpg">
+		<img src="photo/insta4.jpg">
+		<img src="photo/insta5.jpg"></div>
+</div>
+</div>
+</body>
+</html>
