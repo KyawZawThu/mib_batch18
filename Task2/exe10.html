@@ -1,0 +1,57 @@
+<?php
+
+$hbg=4.95;
+$cms=1.95;
+$cl=0.85;
+$total=$hbg*2+$cl+$cms;
+$tax=7.5*$total/100;
+$pre=16*$total/100;
+$tt=$tax+$pre;
+
+// echo "Item"."\t"."\t"."\t"."\t"."Qty"."\t"."Price"."\n";
+// echo "humberger "."\t"."\t"."\t"."2"."\t".$hbg ."\n";
+// echo "Chocolate Milk Shake"."\t"."\t"."1"."\t".$cms."\n";
+// echo "cola"."\t"."\t"."\t"."\t"."1"."\t".$cl."\n\n";
+// echo "====================================================="."\n";
+// echo "total"."\t\t\t\t\t".$total."\n";
+// echo "tax"."\t\t\t\t\t".$tax."\n";
+// echo "pretax"."\t\t\t\t\t".$pre."\n";
+// echo "tip and tax"."\t\t\t\t".$tt."\n";
+echo "<table border=1 cellpadding=10>";
+echo "<th>Item</th>";
+echo "<th>Qty</th>";
+echo "<th>Price</th>";
+echo "<tr>
+	<td>Humberger</td>
+	<td>2</td>
+	<td>$hbg</td>
+</tr>";
+echo "<tr>
+	<td>Chocolate Milk Shake</td>
+	<td>1</td>
+	<td>$cms</td>
+</tr>";
+echo "<tr>
+	<td>Cola</td>
+	<td>1</td>
+	<td>$cl</td>
+</tr>";
+echo "<tr>
+	<th colspan=2>Total</th>
+	<td >$total</td>
+</tr>";
+echo "<tr>
+	<th colspan=2>Tax</th>
+	<td >$tax</td>
+</tr>";
+echo "<tr>
+	<th colspan=2>Tip</th>
+	<td >$pre</td>
+</tr>";
+echo "<tr>
+	<th colspan=2>Tax and Tip</th>
+	<td >$tt</td>
+</tr>";
+echo "</table>";
+
+?>
